@@ -42,7 +42,6 @@ $(function () {
         remote: {
             url: server.http+'/article/findArticlesList',
             success: function (data) {
-                console.log("chengoang")
                 $(".j-tips").text('共查出'+data.total+'条数据');
                 //列表
                 $(".j-table-1").find("tbody").html('');
