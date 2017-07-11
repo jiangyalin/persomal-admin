@@ -1,12 +1,5 @@
 var mongoose = require('./lib/db');
-var Article = new require('./models/article');
 var User = new require('./models/user');
-var Label = new require('./models/label');
-let ArticleLabel = new require('./models/ArticleLabel');
-let Aa = new require('./models/cs').aa;
-let Bb = new require('./models/cs').bb;
-let Cc = new require('./models/cs').cc;
-let Kk = new require('./models/kk');
 
 // var article = new Article({
 //     title : '标题7',
@@ -25,33 +18,33 @@ let Kk = new require('./models/kk');
 //     article_id : '5948750473045b3190b2f060',
 //     label_id: '59451cb246162b4340559421'
 // });
-var userIds	= [new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId()];
-var postIds	= [new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId()];
-var commentIds = [new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId()];
-let aa = new Aa({
-    _id   : userIds[0],
-    name  : 'aikin',
-    posts : [postIds[0]]
-});
-
-let bb = new Bb({
-    _id	  : postIds[0],
-    title	: 'post-by-aikin',
-    poster   : userIds[0],
-    comments : [commentIds[0]]
-});
-
-let cc = new Cc({
-    _id	   : commentIds[0],
-    content   : 'comment-by-luna',
-    commenter : userIds[1],
-    post	  : postIds[0]
-});
-
-let kk = new Kk({
-    name: 'abc',
-    labels: ['59451cb246162b4340559421', '59451e258b941b3ea0a3c29e', '59451e349dd7da228c5237a0']
-});
+// var userIds	= [new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId()];
+// var postIds	= [new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId()];
+// var commentIds = [new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId(), new mongoose.Types.ObjectId()];
+// let aa = new Aa({
+//     _id   : userIds[0],
+//     name  : 'aikin',
+//     posts : [postIds[0]]
+// });
+//
+// let bb = new Bb({
+//     _id	  : postIds[0],
+//     title	: 'post-by-aikin',
+//     poster   : userIds[0],
+//     comments : [commentIds[0]]
+// });
+//
+// let cc = new Cc({
+//     _id	   : commentIds[0],
+//     content   : 'comment-by-luna',
+//     commenter : userIds[1],
+//     post	  : postIds[0]
+// });
+//
+// let kk = new Kk({
+//     name: 'abc',
+//     labels: ['59451cb246162b4340559421', '59451e258b941b3ea0a3c29e', '59451e349dd7da228c5237a0']
+// });
 
 
 // Aa.create(aa, function(err, docs) {
