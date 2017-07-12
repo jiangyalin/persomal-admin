@@ -33,5 +33,7 @@ module.exports = function (app) {
     app.use('/login',require("./login/index"));
     //文档管理
     app.use('/article',require("./article/index"));
+    //标签管理
+    app.use('/label',require("./label/index"));
 
 };

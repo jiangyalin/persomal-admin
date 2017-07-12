@@ -8,7 +8,7 @@ $(function () {
 var server = {
     ip: '192.168.1.67',
     port: '8082',
-    http: 'http://120.27.216.198:8082'
+    http: 'http://localhost:8082'
 };
 
 //计算导航选中

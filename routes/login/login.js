@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = new require('./../../models/user');
+const User = new require('./../../models/User');
 const moment = require('moment');
 
 //登陆
