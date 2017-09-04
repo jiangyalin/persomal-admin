@@ -19,7 +19,7 @@ router.post('/signIn',function (req, res) {
         if (user[0]) {
             if (user[0].pwd == pwd) {
                 req.session.user = user[0];
-                req.session.user.pwd = '******';//删除密码（不允许将密码存入session）
+                req.session.user.pwd = '******'; // 删除密码（不允许将密码存入session）
             } else {
                 url = JSON.stringify('/login');
             }
